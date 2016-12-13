@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>weixinAPP</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0" />
+<meta content="telephone=no" name="format-detection" />
+<link rel="stylesheet" type="text/css" href="css/swiper-3.3.1.min.css">
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="main">
+    <!--音乐开始-->
+    <div id="music_box" class="m_act"></div>
+    <!--音乐结束-->
+    <!--加载开始-->
+      <div class="loading" id="loading">
+            <div class="circle"></div>
+            <div class="circle1"></div>
+      </div>
+    <!--加载结束-->
+    <!--按钮开始-->
+    <i class="ud_box up_icon" id="ud_box"></i>
+    <!--按钮结束-->
+    <!-- 页面开始 -->
+    <div class="swiper-container" style="display:none;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide page1">
+                  <img src="images/page1-bg.jpg" alt="" class="p1show ani" swiper-animate-effect="p1Run" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
+            </div>
+             <div class="swiper-slide page2">
+                  <img src="images/p2-icon1.png" alt="" class="p2-window">
+                  <div id="myVideo"></div>
+                  <div class='p2-icons'>
+                      <img src="images/p2-main.jpg" alt="" class="p2-main">
+                      <img src="images/p2-icon2.png" alt="" class="p2-icon2 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+                      <img src="images/p2-icon3.png" alt="" class="p2-icon3 ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s" swiper-animate-delay="0">
+                      <img src="images/p2-icon4.png" alt="" class="p2-icon4 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="1s" swiper-animate-delay="1.6s">
+                  </div>
+                  <img src="images/p2-txt.png" alt="" class="p2-txt ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1.5s" swiper-animate-delay="2.2s">
+            </div>
+             <div class="swiper-slide page3">
+                  <img src="images/p3-txt1.png" alt="" class="p3-txt1 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0" >
+                  <img src="images/p3-txt2.png" alt="" class="p3-txt2 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.5s" >
+                  <img src="images/p3-tit.png" alt="" class="p3-tit ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="1s" >
+                  <img src="images/p3-icon01.png" alt="" class="p3-icon01 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="1.2s" >
+                  <img src="images/p3-icon02.png" alt="" class="p3-icon02 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="1.5s" >
+                  <img src="images/p3-icon03.png" alt="" class="p3-icon03 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="1.8s" >
+                  <img src="images/p3-icon04.png" alt="" class="p3-icon04 ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="2s" >
+                  <img src="images/p3-icon05.png" alt="" class="p3-icon05 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="2.1s" >
+            </div>
+            <div class="swiper-slide page4">
+                  <img src="images/p4-tit.png" alt="" class="p4-tit">
+                  <ul class="p4-btns clear">
+                      <li class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0s">
+                          <img src="images/p4-icon01.png" alt="">
+                          <img src="images/curicon.png" alt="">
+                      </li>
+                      <li class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+                          <img src="images/p4-icon02.png" alt="">
+                          <img src="images/curicon.png" alt="">
+                      </li>
+                      <li class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1s">
+                          <img src="images/p4-icon03.png" alt="">
+                          <img src="images/curicon.png" alt="">
+                      </li>
+                      <li class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+                          <img src="images/p4-icon04.png" alt="">
+                          <img src="images/curicon.png" alt="">
+                      </li>
+                      <li class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="2s">
+                          <img src="images/p4-icon05.png" alt="">
+                          <img src="images/curicon.png" alt="">
+                      </li>
+                  </ul>
+                  <div class="p4-bottom">
+                      <img src="images/p4-game.jpg" alt="" class="p4-bottom-bg">
+                      <img src="images/gwc-icon.png" alt="" class="gwc-bg">
+                      <img src="images/clock.png" alt="" class="p4-clock">
+                      <img src="images/play-again.png" alt="" class="p4-play ani" swiper-animate-effect="swing" swiper-animate-duration="1s" swiper-animate-delay="3s">
+                      <img src="images/start-btn.png" alt="" class="start-btn ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="2s">
+                  </div>
+            </div>
+            <div class="swiper-slide page5">
+                 <img src="images/code1.png" class="p5-code1 ani" alt="" swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay="0">
+                 <img src="images/code2.png" class="p5-code2 ani" alt="" swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s">
+
+            </div>
+            
+        </div>
+    </div> 
+
+</div>
+
+<script type="text/javascript" src="js/swiper-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+<!-- 引入腾讯视频播放器组件 -->
+<script language="javascript" src="http://qzs.qq.com/tencentvideo_v1/js/tvp/tvp.player.js"
+charset="utf-8"></script>
+<script type="text/javascript">
+window.onload = function(){
+    var html=document.getElementsByTagName('html')[0];
+    var htmlW=html.getBoundingClientRect().width;
+    html.style.fontSize = htmlW/10 +'px';
+    document.getElementById('loading').style.display = 'none';
+    document.querySelector('.swiper-container').style.display="block";
+    //document.querySelectorAll('.swiper-slide') 是获取id class都可以 ie8以上兼容 取得结果是nodelist[]
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'vertical',
+        speed:500,
+        resistanceRatio : 0,
+        onInit: function(swiper){
+            swiperAnimateCache(swiper); //隐藏动画元素
+            swiperAnimate(swiper); //初始化完成 开始动画了
+        },
+        onSlideChangeEnd: function(swiper){
+            swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+            if(swiper.activeIndex == document.querySelectorAll('.swiper-slide').length-1){
+                   document.getElementById('ud_box').className='ud_box down_icon';
+            }else{
+                   document.getElementById('ud_box').className='ud_box up_icon';
+            }
+        }
+
+    })  
+
+// 阻止ios默认拖动;
+document.querySelector('body').addEventListener('touchmove',function(e){
+    e.preventDefault();
+},false);
+//背景音乐
+var bgmusic = new Audio();
+bgmusic.src = "images/music.mp3";
+bgmusic.play();
+bgmusic.loop = true;//循环播放
+bgmusic.autoplay = false;//是否自动播放
+var flog = false;
+
+var musicBtn = document.querySelector('#music_box');
+musicBtn.addEventListener('click',function(){
+    if(flog == false){
+        this.className = ' ';
+        bgmusic.pause();
+        flog = true;
+    }else{
+        this.className = 'm_act';
+        bgmusic.play();
+        flog = false;
+    }
+},false);
+
+
+}
+</script>
+
+</body>
+</html>
